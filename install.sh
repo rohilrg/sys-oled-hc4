@@ -17,6 +17,7 @@ apt-get install -y $DEPS
 # luma.oled depends on this thing, but released non-alpha version does not build under gcc10
 echo "Installing GPIO library dependency in pip..."
 pip3 install RPi.GPIO==0.7.1a4
+pip3 install requests==2.27.1
 
 echo "Installing luma.oled library"
 pip3 install --upgrade luma.oled
